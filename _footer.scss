@@ -1,0 +1,70 @@
+@mixin wrapper-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* フッター */
+footer {
+    background-color: #EAE5DE;
+    position: relative;
+    text-align: center;
+    padding-top: 130px;
+    font-size: 0.8rem;
+
+    .footer-dog {
+        position: absolute;
+        top: -3%;
+        left: 20%;
+        transform: rotate(5deg);
+    }
+    .footer-container {
+        @include wrapper-card;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+
+        img {
+            height: 80px;
+            filter: drop-shadow(1px 1px 2px #333);
+        }
+
+        .footer-menu {
+            display: grid;
+            gap: 20px 40px;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(3, auto);
+            text-align: left;
+            align-items: center;
+            font-size: 0.9rem;
+
+            .contact-btn {
+                background-color: #000;
+                grid-column: 3; 
+                grid-row: 2;
+                border-radius: 5px;
+
+                a {
+                    color: #FFFFFF;
+                    display: block;
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+
+    .sns-list {
+        @include wrapper-card;
+        ul {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            li {
+                margin-left: 20px;
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+} 
