@@ -1,0 +1,112 @@
+@mixin wrapper-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ビューボタン */
+.btn-wrap {
+    @include wrapper-card;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 120px;
+}
+
+.view-btn {
+    border: 1px solid #000;
+    // width: 260px;
+    padding: 10px;
+    margin-block: 60px;
+    display: inline-flex;
+    align-items: center;
+    // justify-content: center;
+    gap: 10px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid #000;
+        border-right: 2px solid #000;
+        margin-inline: 8px 10px;
+        transform: rotate(45deg);
+        transition: transform 0.3s ease;
+    }
+
+    &:hover::before {
+        transform: translateX(2px) rotate(45deg);
+    }
+
+    a {
+        font-family: "Lalezar", sans-serif;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    }
+
+    .paw-btn {
+        display: flex;
+        gap: 6px;
+        margin-left: 8px;
+
+        img {
+            width: 10px;
+            height: 10px;
+            opacity: 0;
+
+            transition: opacity 0.3s ease,
+                        transform 0.3s ease;
+        }
+
+        /* 左足 */
+        img:nth-child(1) {
+            transform: translate(-4px, 6px) rotate(-12deg);
+        }
+
+        /* 右足 */
+        img:nth-child(2) {
+            transform: translate(4px, 0) rotate(12deg);
+            transition-delay: 0.15s;
+        }
+    }
+
+    &:hover {
+        .paw-btn img:nth-child(1) {
+            opacity: 1;
+            transform: translate(0, 2px) rotate(0);
+        }
+
+        .paw-btn img:nth-child(2) {
+            opacity: 1;
+            transform: translate(0, -2px) rotate(0); // ← 右足を上に
+        }
+    }
+
+/* JSで .is-active がついた時に足跡を表示 */
+    &.is-active {
+        .paw-btn img:nth-child(1) {
+            opacity: 1;
+            transform: translate(0, 2px) rotate(0);
+        }
+        .paw-btn img:nth-child(2) {
+            opacity: 1;
+            transform: translate(0, -2px) rotate(0);
+        }
+    } 
+}
+
+/* スマホではhoverを無効化（誤作動防止） */
+@media (any-hover: hover) {
+    .view-btn:hover {
+        .paw-btn img:nth-child(1) { opacity: 1; transform: translate(0, 2px); }
+        .paw-btn img:nth-child(2) { opacity: 1; transform: translate(0, -2px); }
+    } 
+} 

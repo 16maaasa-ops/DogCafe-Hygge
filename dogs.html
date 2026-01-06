@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>DogCafe Hygge</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="site-title">
+                <a href="index.html"><img src="img/logo.png" alt="ロゴ"></a>
+            </h1>
+            
+            <nav class="navi">
+                <div class="navi-img">
+                    <img src="img/navi.png" alt="">
+                </div>
+
+                <div class="navi-content">
+                    <ul class="header-menu">
+                        <li><a href="news.html">ニュース</a></li>
+                        <li><a href="concept.html">コンセプト</a></li>
+                        <li><a href="howto.html">ご利用の流れ</a></li>
+                        <li><a href="dogs.html">ワンちゃんたち</a></li>
+                        <li><a href="price.html">料金・システム</a></li>
+                        <li><a href="access.html">アクセス</a></li>
+                        <li class="contact-btn"><a href="/contact.html">お問い合わせ</a></li>
+                    </ul>
+
+                    <div class="menu-sns">
+                        <ul>
+                            <li><a href="https://x.com/"><img src="img/X.png" alt="X"></a></li>
+                            <li><a href="https://instagram.com/"><img src="img/Instagram.png" alt="instagram"></a></li>
+                            <li><a href="https://facebook.com/"><img src="img/Facebook.png" alt="facebook"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="mask"></div>
+    </header>
+    
+    <main>
+        <div class="dogs-page fade-in-target">
+            <div class="title-img">
+                <img src="img/dogs.jpeg" alt="">
+                <div class="page-title">
+                    <h2>DOGS</h2>
+                    <p>ワンちゃんたち</p>
+                </div>
+            </div>
+            
+            <div class="dog-container">
+                <div class="dog-card" 
+                    data-name="むぎ" 
+                    data-char="あざとい" 
+                    data-time="11:00〜15:00" 
+                    data-modal-img="img/modal_mugi.png"
+                    data-desc="お店の看板娘。おやつを持っている人を見つけると、小首をかしげてじっと見つめてくる「必殺あざとポーズ」の使い手です。食いしん坊なので、食べ物の音にはとっても敏感。">
+                    <img src="img/mugi.png" alt="むぎ">
+                    <div class="dog-text">
+                        <p>【名前】　むぎ</p>
+                        <p>【性格】　あざとい</p>
+                        <p>【時間】　11:00〜15:00</p>
+                    </div>
+                </div>
+
+                <div class="dog-card" 
+                    data-name="O次郎" 
+                    data-char="甘えん坊" 
+                    data-time="11:00〜15:00" 
+                    data-modal-img="img/modal_oziro.png"
+                    data-desc="大きな体に似合わず、とっても寂しがり屋な甘えん坊。お客様が座ると、そっと足元に顎を乗せて寝るのが大好きです。優しく撫でてあげると、いつまでも離れません。">
+                    <img src="img/oziro.png" alt="O次郎">
+                    <div class="dog-text">
+                        <p>【名前】　O次郎</p>
+                        <p>【性格】　甘えん坊</p>
+                        <p>【時間】　11:00〜15:00</p>
+                    </div>
+                </div>
+
+                <div class="dog-card" 
+                    data-name="あずき" 
+                    data-char="人懐っこい" 
+                    data-time="11:00〜15:00" 
+                    data-modal-img="img/concept.png"
+                    data-desc="初対面の人でも全力でしっぽを振ってお出迎えするムードメーカー。ボール遊びが大好きで、お気に入りのボールを持ってきて「投げて！」と誘ってきます。">
+                    <img src="img/azuki.png" alt="あずき">
+                    <div class="dog-text">
+                        <p>【名前】　あずき</p>
+                        <p>【性格】　人懐っこい</p>
+                        <p>【時間】　11:00〜15:00</p>
+                    </div>
+                </div> 
+
+                <div class="dog-card" 
+                    data-name="ばにら" 
+                    data-char="おっとり" 
+                    data-time="11:00〜15:00" 
+                    data-modal-img="img/modal_vanilla.png"
+                    data-desc="マイペースでのんびり屋さん。ドッグランでも走るより、日向ぼっこをしながらお昼寝するのが専門。カフェの癒やし担当で、見ているだけでこちらの力も抜ける不思議な魅力の持ち主。">
+                    <img src="img/vanilla.png" alt="ばにら">
+                    <div class="dog-text">
+                        <p>【名前】　ばにら</p>
+                        <p>【性格】　おっとり</p>
+                        <p>【時間】　11:00〜15:00</p>
+                    </div>
+                </div>
+
+                <div class="dog-card" 
+                    data-name="いち" 
+                    data-char="元気" 
+                    data-time="11:00〜15:00" 
+                    data-modal-img="img/modal_ichi.png"
+                    data-desc="とにかく元気いっぱい！おもちゃが大好きで、ひとりで投げてひとりで追いかけるほどアクティブ。お客様が来ると「遊ぼうよ！」と一番に駆け寄ります。体力は無限大です。">
+                    <img src="img/ichi.png" alt="いち">
+                    <div class="dog-text">
+                        <p>【名前】　いち</p>
+                        <p>【性格】　元気</p>
+                        <p>【時間】　11:00〜15:00</p>
+                    </div>
+                </div>
+
+                <div class="dog-card" 
+                    data-name="エバ" 
+                    data-char="知的" 
+                    data-time="11:00〜15:00" 
+                    data-modal-img="img/modal_eva.jpg"
+                    data-desc="落ち着きがあって、周囲の状況をよく見ている賢い子。お手・おかわりはもちろん、ちょっと難しい芸もこなします。静かに寄り添ってくれるので、本を読んでいる時などの相棒にぴったり。">
+                    <img src="img/eva.png" alt="エバ">
+                    <div class="dog-text">
+                        <p>【名前】　エバ</p>
+                        <p>【性格】　知的</p>
+                        <p>【時間】　11:00〜15:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="custom-shape-divider-top-1765802255">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <img src="img/footer-dog.png" class="footer-dog">
+
+        <div class="footer-container">
+            <a href="index.html"><img src="img/logo.png" alt="ロゴ"></a>
+            <ul class="footer-menu">
+                <li><a href="/news.html">ニュース</a></li>
+                <li><a href="/concept.html">コンセプト</a></li>
+                <li><a href="/howto.html">ご利用の流れ</a></li>
+                <li><a href="/dogs.html">ワンちゃんたち</a></li>
+                <li><a href="/price.html">料金・システム</a></li>
+                <li><a href="/access.html">アクセス</a></li>
+                <li class="contact-btn"><a href="/contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+
+        <div class="sns-list">
+            <ul>
+                <li><a href="https://x.com/"><img src="img/X.png" alt="X"></a></li>
+                <li><a href="https://instagram.com/"><img src="img/Instagram.png" alt="instagram"></a></li>
+                <li><a href="https://facebook.com/"><img src="img/Facebook.png" alt="facebook"></a></li>
+            </ul>
+        </div>
+
+        <small>&copy;DogCafe Hygge</small>
+    </footer>
+
+    <div id="dog-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-close">×</div>
+            
+            <div class="modal-arrow prev">＜</div>
+            <div class="modal-arrow next">＞</div>
+
+            <div id="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
