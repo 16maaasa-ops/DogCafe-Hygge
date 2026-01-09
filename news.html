@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>DogCafe Hygge</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="site-title">
+                <a href="index.html"><img src="img/logo.png" alt="ロゴ"></a>
+            </h1>
+            
+            <nav class="navi">
+                <div class="navi-img">
+                    <img src="img/navi.png" alt="">
+                </div>
+
+                <div class="navi-content">
+                    <ul class="header-menu">
+                        <li><a href="news.html">ニュース</a></li>
+                        <li><a href="concept.html">コンセプト</a></li>
+                        <li><a href="howto.html">ご利用の流れ</a></li>
+                        <li><a href="dogs.html">ワンちゃんたち</a></li>
+                        <li><a href="price.html">料金・システム</a></li>
+                        <li><a href="access.html">アクセス</a></li>
+                        <li class="contact-btn"><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+
+                    <div class="menu-sns">
+                        <ul>
+                            <li><a href="https://x.com/"><img src="img/X.png" alt="X"></a></li>
+                            <li><a href="https://instagram.com/"><img src="img/Instagram.png" alt="instagram"></a></li>
+                            <li><a href="https://facebook.com/"><img src="img/Facebook.png" alt="facebook"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="mask"></div>
+    </header>
+    
+    <main>
+        <div class="news-page fade-in-target">
+            <div class="title-img">
+                <img src="img/news.jpeg" alt="">
+                <div class="page-title">
+                    <h2>NEWS</h2>
+                    <p>お知らせ</p>
+                </div>
+            </div>
+
+            <dl>
+                <dt>2025/11/28<span>DOG</span></dt>
+                <dd class="js-news-item" 
+                    data-title="新しいワンちゃんが仲間入りしました！" 
+                    data-body="本日より新しいワンちゃんが仲間入りしました！
+                    性格はとても人懐っこく、犬と触れ合うのが初めての方にもおすすめです。"
+                    data-img="img/newspage1.png">
+                    新しいワンちゃんが仲間入りしました！
+                </dd>
+
+                <dt>2025/11/25<span>INFO</span></dt>
+                <dd class="js-news-item" 
+                    data-title="年末年始の営業のお知らせ" 
+                    data-body="12月30日〜1月3日はお休みさせていただきます。
+                    年始は1月4日から通常通り営業いたします。">
+                    年末年始の営業のお知らせ
+                </dd>
+
+                <dt>2025/11/23<span>NEWS</span></dt>
+                <dd class="js-news-item"
+                    data-title="クリスマスキャンペーンのお知らせ"
+                    data-body="12月14日〜12月12日まで、クリスマスキャンペーンを実施いたします！
+                    期間内はフリードリンク代が無料となります。
+                    この機会にどうぞご来店ください！">
+                    クリスマスキャンペーンのお知らせ
+                </dd>
+
+                <dt>2025/11/15<span>MEDIA</span></dt>
+                <dd class="js-news-item"
+                    data-title="当店の様子がテレビで紹介されました！"
+                    data-body="2025年11月15日にオハヨーテレビにて、当店を取材していただきました！">
+                    当店の様子がテレビで紹介されました！
+                </dd>
+                
+                <dt>2025/11/1<span>DOG</span></dt>
+                <dd class="js-news-item"
+                    data-title="新しいワンちゃんが仲間入りしました！" 
+                    data-body="本日より新しいワンちゃんが仲間入りしました！
+                    性格はとても人懐っこく、犬と触れ合うのが初めての方にもおすすめです。"
+                    data-img="img/newspage2.jpeg">新しいワンちゃんが仲間入りしました！
+                </dd>
+            </dl>
+
+            <div class="btn-wrap">
+                <div class="view-btn news-btn js-paw-trigger">
+                    <a href="#">VIEW MORE</a>
+                    <div class="paw-btn">
+                        <img class="paw-1" src="img/paw.svg" alt="">
+                        <img class="paw-2" src="img/paw.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="custom-shape-divider-top-1765802255">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <img src="img/footer-dog.png" class="footer-dog">
+
+        <div class="footer-container">
+            <a href="index.html"><img src="img/logo.png" alt="ロゴ"></a>
+            <ul class="footer-menu">
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="concept.html">コンセプト</a></li>
+                <li><a href="howto.html">ご利用の流れ</a></li>
+                <li><a href="dogs.html">ワンちゃんたち</a></li>
+                <li><a href="price.html">料金・システム</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li class="contact-btn"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+
+        <div class="sns-list">
+            <ul>
+                <li><a href="https://x.com/"><img src="img/X.png" alt="X"></a></li>
+                <li><a href="https://instagram.com/"><img src="img/Instagram.png" alt="instagram"></a></li>
+                <li><a href="https://facebook.com/"><img src="img/Facebook.png" alt="facebook"></a></li>
+            </ul>
+        </div>
+
+        <small>&copy;DogCafe Hygge</small>
+    </footer>
+
+    <div class="modal" id="news-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="news-modal-img">
+            <div class="modal-text">
+            <h3 id="news-modal-title"></h3>
+            <p id="news-modal-body"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
